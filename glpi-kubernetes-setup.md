@@ -1,17 +1,12 @@
-Com certeza, irmão! Aqui está um arquivo `.md` prontinho pra você colocar no GitHub. Ele une **toda a instalação do MySQL e GLPI no Kubernetes com persistência de dados**, usando só **kubectl na linha de comando**, sem YAMLs separados.
-
----
-
-### 📄 `glpi-kubernetes-setup.md`
+###  `glpi-kubernetes-setup.md`
 
 ````markdown
-# 🚀 GLPI + MySQL no Kubernetes com Persistência (sem YAML)
 
 Este guia mostra como implantar o **GLPI** com **MySQL 8** no Kubernetes usando apenas `kubectl` pela linha de comando — com armazenamento persistente via PVCs.
 
 ---
 
-## 📦 Pré-requisitos
+##  Pré-requisitos
 
 - Cluster Kubernetes configurado (`kubectl` funcionando)
 - Permissão para criar `pods`, `services` e `persistentvolumeclaims`
@@ -169,7 +164,4 @@ Para produção, o ideal é usar `Deployments` em vez de `Pods diretos`, e aplic
 
 ```
 
----
-
-Se quiser, posso também converter isso direto num arquivo `.md` para download. Quer?
 ```
