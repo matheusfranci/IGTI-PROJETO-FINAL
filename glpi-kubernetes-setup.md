@@ -170,3 +170,6 @@ Para produção, o ideal é usar `Deployments` em vez de `Pods diretos`, e aplic
 ```
 
 ---
+
+Se quiser, posso também converter isso direto num arquivo `.md` para download. Quer?
+```
