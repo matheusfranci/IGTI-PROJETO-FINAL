@@ -156,10 +156,6 @@ Os dados serão preservados graças aos PVCs!
 
 ---
 
-## ✨ Dica Extra
-
-Para produção, o ideal é usar `Deployments` em vez de `Pods diretos`, e aplicar políticas de backup para os volumes.
-
 ---
 
 ```
