@@ -153,11 +153,3 @@ kubectl delete svc glpi-service glpi-mysql
 ```
 
 Os dados serão preservados graças aos PVCs!
-
----
-
----
-
-```
-
-```
