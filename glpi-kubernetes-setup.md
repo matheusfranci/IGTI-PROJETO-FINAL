@@ -1,12 +1,17 @@
-###  `glpi-kubernetes-setup.md`
+Com certeza, irmão! Aqui está um arquivo `.md` prontinho pra você colocar no GitHub. Ele une **toda a instalação do MySQL e GLPI no Kubernetes com persistência de dados**, usando só **kubectl na linha de comando**, sem YAMLs separados.
+
+---
+
+### 📄 `glpi-kubernetes-setup.md`
 
 ````markdown
+# 🚀 GLPI + MySQL no Kubernetes com Persistência (sem YAML)
 
 Este guia mostra como implantar o **GLPI** com **MySQL 8** no Kubernetes usando apenas `kubectl` pela linha de comando — com armazenamento persistente via PVCs.
 
 ---
 
-##  Pré-requisitos
+## 📦 Pré-requisitos
 
 - Cluster Kubernetes configurado (`kubectl` funcionando)
 - Permissão para criar `pods`, `services` e `persistentvolumeclaims`
@@ -135,7 +140,7 @@ kubectl expose pod glpi --type=LoadBalancer --port=80 --name=glpi-service
 
 ---
 
-##  Acesso e Teste
+## ✅ Acesso e Teste
 
 * **GLPI Web:** IP do serviço `glpi-service` (use `kubectl get svc glpi-service`)
 * **MySQL:** Internamente via `glpi-mysql:3306`
@@ -143,7 +148,7 @@ kubectl expose pod glpi --type=LoadBalancer --port=80 --name=glpi-service
 
 ---
 
-##  Para recriar
+## 🔁 Para recriar
 
 Caso precise refazer os pods:
 
@@ -156,7 +161,7 @@ Os dados serão preservados graças aos PVCs!
 
 ---
 
-##  Dica Extra
+## ✨ Dica Extra
 
 Para produção, o ideal é usar `Deployments` em vez de `Pods diretos`, e aplicar políticas de backup para os volumes.
 
@@ -164,4 +169,4 @@ Para produção, o ideal é usar `Deployments` em vez de `Pods diretos`, e aplic
 
 ```
 
-```
+---
